@@ -12,7 +12,7 @@ public class Temperature {
    public static void main(String[] args) {
       
       // variables for the problem
-      double fahrenheit, celsius;
+      double fahrenheit, celsius, kelvin;
       
       Scanner scan = new Scanner (System.in);
       
@@ -28,9 +28,11 @@ public class Temperature {
       celsius = Math.round(celsius * 100);                
       celsius = celsius / 100.0;                           
       
+      // calculate kelvin
+      kelvin = celsius + 273.15;
       
       // output the temperature in celsius
       System.out.println(fahrenheit + " Grad Fahrenheit entsprechen "       
-                   + celsius + " Grad Celsius.");
+                   + celsius + " Grad Celsius " + kelvin + " Grad Kelvin.");
    }
 }
